@@ -26,4 +26,4 @@ dist-ssr
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-./components.d.ts
+components.d.ts
