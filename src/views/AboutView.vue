@@ -9,9 +9,9 @@
 
 import {fetchSmsCode} from "@/service";
 
-function test(){
-  const {data,error} =  fetchSmsCode("112")
-  console.log(data,error)
+async function test() {
+  const {data, error} = await fetchSmsCode("112")
+  console.log(data, error)
 }
 </script>
 <style>

@@ -1,26 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
-const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_BASE_URL),
-  routes: [
+import {PageRoute} from "@/typings/route";
+import {setupRouter} from "@/utils";
+// 所有的页面路由
+let pageRoutes: PageRoute[] = [
     {
-      path: '/',
-      name: 'home',
-      meta: {
-        title: '首页'
-      },
-      component: HomeView
+        path: "/",
+        redirect: "/home"
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+        name: "home",
+        path: "/home",
+        component: () => import("../views/HomeView.vue"),
+        meta: {title: "首页", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
+    },
+    {
+        name: "about",
+        path: "/about",
+        component: () => import("../views/AboutView.vue"),
+        meta: {title: "关于", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
     }
-  ]
-})
+]
 
-export default router
+export default setupRouter(pageRoutes)

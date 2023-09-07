@@ -7,4 +7,4 @@ export function setupStore(app: App) {
   store.use(piniaPersist);
   app.use(store);
 }
-export * from './modules/auth';
+export * from './modules';
