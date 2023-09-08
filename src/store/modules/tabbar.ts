@@ -1,5 +1,6 @@
 import {defineStore} from "pinia";
 import {TabBarRoute} from "@/typings/route";
+import {useRoute} from "vue-router";
 
 interface TabBarRouteState {
     routes: TabBarRoute[]
@@ -33,7 +34,11 @@ export const useTabBarStore = defineStore({
          * 判断是否是tabbar路由
          * @param path
          */
-        isTabBarRoute(path: string) {
+        isTabBarRoute(path?: string) {
+            if (!path) {
+                const route = useRoute()
+                path = route.path
+            }
             return this.routes.some(route => route.path === path)
         }
     }
