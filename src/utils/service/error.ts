@@ -45,7 +45,9 @@ export function handleAxiosError(axiosError: AxiosError) {
       () => {
         const errorCode: ErrorStatus = (axiosError.response?.status as ErrorStatus) || 'DEFAULT';
         const msg = ERROR_STATUS[errorCode];
-        Object.assign(error, { code: errorCode, msg });
+        //@ts-ignore
+        const resMsg = axiosError.response?.data?.msg || msg;
+        Object.assign(error, { code: errorCode,  msg: resMsg });
       }
     ]
   ];

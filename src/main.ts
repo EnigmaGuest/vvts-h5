@@ -2,12 +2,13 @@ import {createApp} from 'vue'
 
 import App from './App.vue'
 import router from './router'
-import {createPinia} from "pinia";
-import piniaPersist from "pinia-plugin-persist";
+import {setupStore} from "@/store";
+import "@fortawesome/fontawesome-free/css/all.min.css"
+import "tailwindcss/tailwind.css"
+import "./assets/index"
+import "amfe-flexible/index.js"
 
 const app = createApp(App)
-const pinia = createPinia()
-pinia.use(piniaPersist)
+setupStore(app)
 app.use(router)
-app.use(pinia);
 app.mount('#app');

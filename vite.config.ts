@@ -27,6 +27,8 @@ export default defineConfig((configEnv) => {
             port: 4000,
             open: true,
             proxy: createViteProxy(isOpenProxy, envConfig)
+        },
+        css: {
         }
     }
 })
