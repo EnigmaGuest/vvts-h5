@@ -68,9 +68,9 @@ npm run build
 - [x] 集成Axios
 - [x] 集成Vant
 - [x] 路由管理,一键配置顶部导航栏和底部导航栏
-- [ ] 集成Tailwind CSS
-- [ ] 集成Font Awesome
-- [ ] 集成rem适配方案
+- [x] 集成Tailwind CSS
+- [x] 集成Font Awesome
+- [x] 集成rem适配方案
 - [ ] 页面模版
 ## 贡献
 
