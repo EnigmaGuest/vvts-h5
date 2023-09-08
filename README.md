@@ -63,7 +63,15 @@ npm run build
 │   └── views                    # 视图目录
 └── vite.config.js               # Vite配置文件
 ```
-
+##开发进度
+- [x] 基本项目结构 vue全家桶
+- [x] 集成Axios
+- [x] 集成Vant
+- [x] 路由管理,一键配置顶部导航栏和底部导航栏
+- [ ] 集成Tailwind CSS
+- [ ] 集成Font Awesome
+- [ ] 集成rem适配方案
+- [ ] 页面模版
 ## 贡献
 
 如果你对该项目有任何建议或改进，请随时提出。同时欢迎提交Pull Request，一起使该项目变得更好。
