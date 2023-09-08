@@ -63,7 +63,7 @@ npm run build
 │   └── views                    # 视图目录
 └── vite.config.js               # Vite配置文件
 ```
-##开发进度
+## 开发进度
 - [x] 基本项目结构 vue全家桶
 - [x] 集成Axios
 - [x] 集成Vant
