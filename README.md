@@ -1,6 +1,6 @@
 # H5移动端项目模板
 
-这是一个基于Vite+Vue3+Ts+Vant4+Tailwind CSS+Axios+rem适配+Font Awesome的H5移动端项目模板。
+这是一个基于Vite+Vue3+Pinia+Ts+Vant4+Tailwind CSS+Axios+rem适配+Font Awesome的H5移动端项目模板。
 
 ## 特性
 
