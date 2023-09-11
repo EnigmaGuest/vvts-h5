@@ -9,6 +9,7 @@ interface PageRoute {
     // 可自行添加其他属性
 }
 
+// 路由元信息
 interface RouteMetaStyle extends RouteMeta {
     navigationStyle: "default" | "custom";
     title: string;

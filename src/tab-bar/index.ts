@@ -1,6 +1,6 @@
-// tabbar路由 必须再pageRoutes中注册
 import {TabBarRoute} from "@/typings/route";
 
+// path必须再pageRoutes中注册
 export const tabBarRoutes: TabBarRoute[] = [
     {
         path: "/home",
