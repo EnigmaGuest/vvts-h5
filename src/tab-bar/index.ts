@@ -5,11 +5,11 @@ export const tabBarRoutes: TabBarRoute[] = [
     {
         path: "/home",
         text: "首页",
-        icon: "solar:home",
+        icon: "fa-solid fa-spa",
     },
     {
-        path: "/about",
-        text: "关于",
-        icon: "solar:account",
+        path: "/mine",
+        text: "我的",
+        icon: "fa-solid fa-face-smile",
     }
 ]

@@ -17,17 +17,25 @@ interface RouteMetaStyle extends RouteMeta {
     textColor: string | "dark" | "light";
 }
 
+type iconType = "icon" | "img"
+
 interface TabBarRoute {
     // 路径
     path: string;
-    // icon
-    icon: string;
     // 标题
     text: string;
+    // type
+    type?: iconType;
+    // icon
+    icon?: string;
     // 未选中时的颜色
     color?: string;
     // 选中时的颜色
     activeColor?: string;
+    // 未选中图片
+    inactiveImg?: string;
+    // 选中图片
+    activeImg?: string;
     // 是否显示小红点
     dot?: boolean;
     // 图标右上角徽标的内容

@@ -9,14 +9,26 @@ let pageRoutes: PageRoute[] = [
     {
         name: "home",
         path: "/home",
-        component: () => import("../views/HomeView.vue"),
+        component: () => import("../views/home/index.vue"),
         meta: {title: "首页", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
     },
     {
-        name: "about",
-        path: "/about",
-        component: () => import("../views/AboutView.vue"),
-        meta: {title: "关于", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
+        name: "mine",
+        path: "/mine",
+        component: () => import("../views/mine/index.vue"),
+        meta: {title: "我的", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
+    },
+    {
+        name: "components-echarts",
+        path: "/components/echarts",
+        component: () => import("../views/components/echarts.vue"),
+        meta: {title: "echarts", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
+    },
+    {
+        name: "components-icon",
+        path: "/components/icon",
+        component: () => import("../views/components/icon.vue"),
+        meta: {title: "图标", navigationStyle: "default", backgroundColor: "#fff", textColor: "dark"}
     }
 ]
 
