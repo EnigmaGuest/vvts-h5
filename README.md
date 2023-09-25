@@ -72,7 +72,9 @@ npm run build
 └── tailwind.config.js           # tailwind配置文件
 └── postcss.config.js            # postcss配置文件
 ```
+
 ## 路由使用
+
 ```ts
 // 路由统一配置再router/index.ts中
 // 和vueRouter基本相同，唯一不同的是meta
@@ -96,6 +98,7 @@ let pageRoutes: PageRoute[] = [
     }
 ]
 ```
+
 ## 底部导航使用
 
 ```ts
@@ -117,6 +120,7 @@ export const tabBarRoutes: TabBarRoute[] = [
 ```
 
 ## 开发进度
+
 - [x] 基本项目结构 vue全家桶
 - [x] 集成Axios
 - [x] 集成Vant
@@ -125,6 +129,13 @@ export const tabBarRoutes: TabBarRoute[] = [
 - [x] 集成Font Awesome
 - [x] 集成rem适配方案
 - [ ] 页面模版
+
+### 项目截图
+
+![home.png](doc%2Fimg%2Fhome.png)
+![icon.png](doc%2Fimg%2Ficon.png)
+![echarts.png](doc%2Fimg%2Fecharts.png)[]()
+
 ## 贡献
 
 如果你对该项目有任何建议或改进，请随时提出。同时欢迎提交Pull Request，一起使该项目变得更好。
