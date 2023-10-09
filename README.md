@@ -1,4 +1,4 @@
-# H5移动端项目模板（vite+vue3+pinia+Ts+vant4+tailwindcss+axios+rem适配+fontawesome的H5移动端项目模板）
+# vite+vue3+pinia+Ts+vant4+tailwindcss+axios+rem适配+fontawesome的H5移动端项目模板
 
 这是一个基于vite+vue3+pinia+Ts+vant4+tailwindcss+axios+rem适配+fontawesome的H5移动端项目模板。
 
